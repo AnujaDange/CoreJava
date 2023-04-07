@@ -3,10 +3,14 @@ package com.livedemo;
 import java.util.Scanner;
 
 public class SwitchCalculator {
-
-	public static void main(String[] args) {
-		// TODO Auto-generated method stub
-           Scanner sc = new Scanner(System.in);
+	    
+	   void calculator()
+	   {
+		 
+		   char ch;
+		do {
+			  
+		   Scanner sc = new Scanner(System.in);
            System.out.println("Enter Two Numbers = ");
            int a=sc.nextInt();
            int b=sc.nextInt();
@@ -34,6 +38,18 @@ public class SwitchCalculator {
            
            
            }
+           System.out.println("Do you want to continue press y/n");
+           ch=sc.next().charAt(0);
+             
+	    }while(ch=='y' || ch=='Y');
+	   }
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		 
+		SwitchCalculator obj=new SwitchCalculator();
+		obj.calculator();
+          
 	}
 
 }
