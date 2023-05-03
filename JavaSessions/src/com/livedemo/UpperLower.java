@@ -10,6 +10,8 @@ public class UpperLower {
 		char ch2 = 'D';
 		int j = ch2 + 32; // capital to small +32
 		System.out.println((char) j);
+		i=ch1;
+		System.out.println(i);
 
 	}
 
