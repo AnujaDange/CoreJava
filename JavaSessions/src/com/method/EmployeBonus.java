@@ -4,7 +4,7 @@ public class EmployeBonus {
 
 	int id;
 	String name, dept;
-	float salary;
+	static float salary;
 	char rate;
 
 	void setData(int id, String name, String dept, float salary, char rate) {
@@ -34,8 +34,9 @@ public class EmployeBonus {
 
 	}
 
-	void calculatepf(float newSal) {
+	Object calculatepf(float newSal) {
 		float pf = (float) (newSal - newSal * 0.10);
+		return pf;
 
 	}
 
@@ -45,7 +46,7 @@ public class EmployeBonus {
 		e1.setData(11, "Priti", "HR", 50000, 'A');
 		System.out.println(e1);
 		EmployeBonus e2 = new EmployeBonus();
-		newSal = e2.calculatepf();
+		Object newSal = e2.calculatepf(salary);
 
 	}
 
