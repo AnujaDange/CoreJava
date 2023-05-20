@@ -3,7 +3,7 @@
 /*Anonymous simply means nameless. An object which has no reference is known as an anonymous object.
 It can be used at the time of object creation only.*/
 package com.assignment_OOps;
-
+  // Object without having any name but having reference
 public class AnonymousObj_06 {
 
 	void fact(int  n){  
@@ -18,7 +18,7 @@ public class AnonymousObj_06 {
 		System.out.println("Shows Anonymous Object");
 	}
 		public static void main(String args[]){  
-			new AnonymousObj_06.show();
+			new AnonymousObj_06().show();
 		new AnonymousObj_06().fact(5);//calling method with anonymous object  
 		}  
 
